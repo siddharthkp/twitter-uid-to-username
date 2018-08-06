@@ -1,0 +1,16 @@
+{
+  "name": "twitter-uid-to-username",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro"
+  },
+  "keywords": [],
+  "author": "siddharthkp",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "0.18.0",
+    "micro": "9.1.4"
+  }
+}
