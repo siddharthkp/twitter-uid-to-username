@@ -17,8 +17,9 @@ module.exports = (req, res) => {
   axios
     .post('https://tweeterid.com/ajax.php', querystring.stringify({ input: uid }))
     .then(response => {
-      cache[uid] = { username: response.data }
-      res.end(JSON.stringify({ username: response.data }))
+      const username = response.data.replace('@', '')
+      cache[uid] = { username }
+      res.end(JSON.stringify({ username }))
     })
     .catch(error => res.end())
 }
